@@ -68,5 +68,5 @@ function onLoadMore() {
 }
 
 function openModal(condition) {
-  modalWindow.classList('is-open')
+  modalWindow.classList.add('is-open')
 }

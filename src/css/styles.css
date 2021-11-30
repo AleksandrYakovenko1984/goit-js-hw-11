@@ -24,11 +24,14 @@ img {
 .info-item {
   display: inline;
 }
+
 .is-hidden {
   visibility: hidden;
 }
-
-.is-hidden-wind {
+.hidden {
+  opacity: 0;
+}
+.is-open {
   opacity: 1;
   pointer-events: initial;
 }
