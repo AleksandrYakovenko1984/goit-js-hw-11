@@ -3,11 +3,7 @@
   --primary-text-color: #212121;
   --card-set-gap: 15px;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .body {
   margin-left: auto;
   margin-right: auto;
@@ -37,10 +33,14 @@ img {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
-.img-card {
+/* .img-card {
   height: 390px;
+} */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
 .info {
   display: flex;
   justify-content: space-around;
@@ -53,7 +53,16 @@ img {
 .modal {
   position: relative;
 }
-
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+}
+.load-more {
+  width: 120px;
+  height: 40px;
+  color: bisque;
+  background-color: dodgerblue;
+}
 .is-hidden {
   visibility: hidden;
 }
@@ -62,17 +71,18 @@ img {
 }
 .is-open {
   opacity: 1;
-  position: absolute;
+  position: fixed;
   top: 15px;
   left: 10%;
   right: 10%;
   pointer-events: initial;
   width: 80vw;
   height: 90vh;
-  background-color: aqua;
 }
 .close {
   position: absolute;
   top: 15px;
   right: 15px;
+
+  border-radius: 25px;
 }
