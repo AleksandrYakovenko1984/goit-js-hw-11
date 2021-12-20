@@ -50,19 +50,7 @@ img {
   flex-direction: column;
 }
 /*  modal-window*/
-.modal {
-  position: relative;
-}
-.load-more-btn {
-  display: flex;
-  justify-content: center;
-}
-.load-more {
-  width: 120px;
-  height: 40px;
-  color: bisque;
-  background-color: dodgerblue;
-}
+
 .is-hidden {
   visibility: hidden;
 }
@@ -78,11 +66,37 @@ img {
   pointer-events: initial;
   width: 80vw;
   height: 90vh;
+  background-color: bisque;
 }
+.modal {
+  display: flex;
+  align-items: center;
+}
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+}
+.load-more {
+  width: 120px;
+  height: 40px;
+  color: bisque;
+  background-color: dodgerblue;
+}
+
 .close {
   position: absolute;
-  top: 15px;
-  right: 15px;
-
-  border-radius: 25px;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+}
+.icon-close {
+  color: currentColor;
+}
+.modal-content {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
