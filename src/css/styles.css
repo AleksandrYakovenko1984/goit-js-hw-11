@@ -66,11 +66,13 @@ img {
   pointer-events: initial;
   width: 80vw;
   height: 90vh;
-  background-color: bisque;
+  background-color: transparent;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal {
   display: flex;
   align-items: center;
+  padding: 20px 20px 20px 20px;
 }
 .load-more-btn {
   display: flex;
@@ -88,15 +90,17 @@ img {
   top: 10px;
   right: 10px;
   background-color: transparent;
-  border: none;
+  border-radius: 100%;
+  filter: invert(100%);
 }
 .icon-close {
-  color: currentColor;
+  color: red;
 }
 .modal-content {
   width: auto;
-  height: 100%;
+  height: auto;
   margin: auto;
   max-width: 100%;
   max-height: 100%;
+  overflow: hidden;
 }

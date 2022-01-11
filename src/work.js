@@ -142,7 +142,7 @@ async function openModal(id) {
 }
 function closeModal() {
   modalWindow.classList.remove('is-open')
-  
+  modalContent.innerHTML =" "
 }
 function showError() {
      return Notiflix.Notify.failure("");
